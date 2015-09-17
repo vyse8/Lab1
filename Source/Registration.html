@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        <!--
+        function saveUser() {
+            var input1 = document.getElementById('first').value;
+            localStorage.setItem('first', input1);
+            var input2 = document.getElementById('last').value;
+            localStorage.setItem('last', input2);
+            var input3 = document.getElementById('street').value;
+            localStorage.setItem('street', input3);
+            var input4 = document.getElementById('city').value;
+            localStorage.setItem('city', input4);
+            var input5 = document.getElementById('state').value;
+            localStorage.setItem('state', input5);
+            var input6 = document.getElementById('zipCode').value;
+            localStorage.setItem('zipCode', input6);
+            var input7 = document.getElementById('phone').value;
+            localStorage.setItem('phone', input7);
+
+            window.location = "Lab3.html";
+        }
+        //-->
+    </script>
+    <h1>Registration</h1>
+    <link href="site.css" rel="stylesheet">
+    <br></br>
+
+    <body <div class="input">
+        First Name:
+        <input ng-model="user.firstName" id="first"></input>
+        <br/>
+        <br/> Last Name:
+        <input ng-model="user.lastName" id="last"></input>
+        <br/>
+        <br/>
+        <div class="input">
+            Street:
+            <input ng-model="user.street" id="street"></input>
+            <br/>
+            <br/> City:
+            <input ng-model="user.city" id="city"></input>
+            <br/>
+            <br/>
+            <div class="input">
+                State:
+                <input ng-model="user.state" id="state"></input>
+                <br/>
+                <br/>
+                <div class="input">
+                    Zip Code:
+                    <input ng-model="user.zipCode" id="zipCode"></input>
+                    <br/>
+                    <br/> Phone Number:
+                    <input ng-model="user.phoneNumber" id="phone"></input>
+                    <br/>
+                    <br/>
+                    <input type="submit" ng-click="save(user.firstName, user.lastName,user.street,user.city,user.state, user.zipCode,user.phoneNumber)" onclick="saveUser();" value="Save"></input>
+                    <br/>
+                    <br/>
+                </div>
+
+
+    </body </head>
+
+</html>

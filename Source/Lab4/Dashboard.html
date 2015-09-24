@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <h1>BeerMeKC Analytics</h1>
+    <b>
+    Welcome 
+    <label for="user"; id="user";></label>
+   </b>
+    <br>
+    
+    <br>     
+    <br>
+    <h2 style= text align="center";>Samuel Adams Sales</h2>
+    <img src="https://chart.googleapis.com/chart?chs=400x150&chd=t:5,10,60,25&cht=p3&chl=Winter Lager|Pumpkin Batch|OctoberFest|Summer Ale" height="300" width="700">
+		<br>
+    <img src="http://chart.finance.yahoo.com/z?s=SAM&t=12m&q=l&z=l&p=m7,m30" height="400" width="800">
+
+    <body onload="onLoad();">
+        <script>
+            function onLoad() {
+                var text = "";
+                text = localStorage.getItem("username");
+                document.getElementById('user').innerHTML = text;
+            }
+        </script>
+
+
+
+
+    </body>
+</head>
+
+</html>
